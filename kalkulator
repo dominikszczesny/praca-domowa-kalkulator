@@ -1,0 +1,64 @@
+#include <iostream>
+
+using namespace std;
+double dodaj (double a, double b)
+{
+	return a + b;
+}
+
+double odejmij (double a, double b)
+{
+	return a - b;
+}
+
+double podziel (double a, double b)
+{
+	return a / b;
+}
+double pomnoz (double a, double b)
+{
+	return a * b;
+}
+void wyjscie()
+{
+	exit(0);
+}
+int main(int argc,char** argv) {
+	double a,b;
+	int wybor;
+	
+	while(5)
+	{
+	
+	cout << "kalkulator\n";
+	cout << "podaj pierwsza liczbe:\n";
+	cin >>a;
+	cout << "podaj druga liczbe:\n";
+	cin >>b;
+	cout<< "podaj co chcesz liczyc:\n 1- dodawanie\n 2- odejmowanie\n 3- dzielenie\n 4- monzenie\n";
+	cin >> wybor;
+	
+	switch(wybor)
+	{
+		case 1:
+		cout <<dodaj(a,b);
+		break;
+		case 2:
+		cout << odejmij (a,b);
+		break;
+		case 3:
+		cout << podziel(a,b);
+		break;
+		case 4:
+		cout << pomnoz (a,b);
+		break;
+		case 5:
+			wyjscie();
+	}
+	
+}
+	
+	
+	return 0;
+	
+}
